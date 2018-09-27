@@ -1,0 +1,16 @@
+@media only screen and (max-width: 460px) {
+    form, table {
+        position: relative;
+        left: -10%;
+    }
+    
+    td {
+	    font-size: 50%;
+        width: 50%;
+        overflow: hidden;
+    }
+    
+    input {
+	   width: 100%;
+    }
+}

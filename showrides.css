@@ -1,0 +1,23 @@
+td {
+    width: 33%;
+    border: 1px solid #FFFFFF;
+    padding: 0px;
+    /*word-wrap: break-word;*/
+    overflow: hidden;
+    max-width: 500px;
+}
+
+th {
+    border: 1px solid #FFFFFF;
+}
+
+table {
+    margin: auto;
+    min-width: 0;
+    max-width: 1500px;
+    border-collapse: collapse;
+}
+
+.noborder {
+    border: none;
+}

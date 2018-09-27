@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FriRide</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="banner.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <h1><a class="title" href="index.html">FriRide Ride Share</a></h1>
+    <div id="app">
+      <banner></banner>
+    </div>
+    <script src="vue.min.js"></script>
+    <script src="banner.js"></script>
+    <h1><u>How to Obtain An API Key</u></h1>
+    <h2>1. Create An Account</h2>
+    <p>If you do not already have an account, you can create one <a href="newaccount.html" target="_blank">here</a>.</p>
+    <h2>2. Purchase Keys</h2>
+    <p>An API key is good for 10,000 requests, but an unlimited number of API keys can be purchased for any account. TODO: actual purchasing</p>
+    <center><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+						   ">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form></center>
+
+    <p>You will eventually recieve your key via email. Note, use the same email for the user purchase as the paypal account.</p>
+
+    <h2>3. Use A Key</h2>
+    <p>API keys can be used in place of session cookies for the REST functions. Simply <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cookie" target="_blank">send a cookie</a> of ID=YOUR_API_KEY to verify you requests.</p>
+  </body>
+</html>

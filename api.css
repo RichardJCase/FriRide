@@ -1,0 +1,13 @@
+.doc {
+    width: 100%;
+    border: solid 1px;
+    margin-bottom: 10px;
+}
+
+.funcTitle {
+    font-weight: bold;
+}
+
+.desc {
+    border: solid 1px;
+}

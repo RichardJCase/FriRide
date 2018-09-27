@@ -1,0 +1,18 @@
+@media only screen and (max-width: 380px) {
+  .right {
+    text-align: right;
+  }
+  
+  td, th {
+    font-size: 50%;
+  }
+
+  input {
+    max-width: 70px;
+    font-size: 50%;
+  }
+}
+
+input {
+    width: 100%;
+}

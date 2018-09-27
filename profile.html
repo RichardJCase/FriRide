@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FriRide</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="profile.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="banner.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="loggedin.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <h1><a class="title" href="index.html">FriRide Ride Share</a></h1>
+    <div id="app">
+      <banner></banner>
+    </div>
+    <script src="vue.min.js"></script>
+    <script src="banner.js"></script>
+    
+    <p id="name"></p>
+    <img id="pic" />
+    <p id="picedit" class="point">Edit Picture</p>
+    <div>
+      <form method="POST" action="/picedit" enctype="multipart/form-data">
+	<input type="file" name="pic" accept="image/*">
+	<input type="hidden" name="user" class="user" />
+	<input type="submit" value="Submit">
+      </form>
+    </div>
+    <p id="rating"></p>
+    <p id="bio"></p>
+    <p id="bioedit" class="point">Edit Bio</p>
+    <div>
+      <form method="POST" action="/bioedit">
+	<input name="bio"/>
+	<input type="hidden" name="user" class="user"/>
+	<input type="submit" value="Submit">
+      </form>
+    </div>
+    <p id="changepassword" class="point">Change Password</p>
+    <div>
+      <form action="/changepassword" method="POST">
+	<table>
+	  <tr>
+	    <td>Old password:</td>
+	    <td><input type="password" name="oldpass"/></td>
+	  </tr>
+	  <tr>
+	    <td>New password:</td>
+	    <td><input id="newpass" type="password" name="newpass"/></td>
+	  </tr>
+	  <tr>
+	    <td>Confirm:</td>
+	    <td><input id="confirm" type="password"/></td>
+	  </tr>
+	  <tr>
+	    <td></td>
+	    <td><input id="newpasssubmit" type="submit" value="Submit" class="right"/> </td>
+	  </tr>
+	</table>
+	<input type="hidden" name="user" class="user"/>
+      </form>
+      <br>
+    </div>
+    <p id="rate" class="point">Rate User</p>
+    <div>
+      <form action="/rate" method="POST">
+	<p>Your rating: 
+	<select name="rating">
+	  <option value="-2">-2</option>
+	  <option value="-1">-1</option>
+	  <option value="0" selected="selected">0</option>
+	  <option value="1">1</option>
+	  <option value="2">2</option>
+	</select>
+	<input id="user" type="hidden" name="user" value=""/>
+	<input type="submit" value="Submit"/>
+	</p>
+      </form>
+    </div>
+    <form id="delform" action="/deleteAccount" method="POST">
+      <input type="hidden" name="user" class="user"/>
+      <input class="bigredbutton" type="submit" value="Delete Account"/>
+    </form>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="plink.js"></script>
+    <script src="GET.js"></script>
+    <script src="profile.js"></script>
+  </body>
+</html>

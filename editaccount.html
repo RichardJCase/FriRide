@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FriRide</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <h1><a class="title" href="index.html">FriRide Ride Share</a></h1>
+    <ul id="banner">
+      <li><a href="index.html">About</a></li>
+      <li><a href="login.html">Log in</a></li>
+      <li><a href="download.html">Download</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="api.html">API</a></li>
+    </ul>
+    
+    <form action="/editaccount" method="POST">
+      <table>
+	<tr>
+	  <td>Email:</td>
+	  <td><input type="text" name="email"></td>
+	</tr>
+	<tr>
+	  <td>Address:</td>
+	  <td><input type="text" name="address"></td>
+	</tr>
+	<tr>
+	  <td>Profile pic: <input type="file" name="pic" accept="image/*"></td>
+	</tr>
+	<tr>
+	  <td><img src="" id="profilePic"></td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td><input type="submit" value="Submit" class="right"></td>
+	</tr>
+      </table>
+    </form> 
+  </body>
+</html>

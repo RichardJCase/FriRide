@@ -1,0 +1,147 @@
+body {
+    position: relative;
+    left: 25%;
+    width: 50%;
+    background-color: #03A9F4;
+    color: #E0F7FA;
+    font-size: 200%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.title:link {
+    color: #E0F7FA;
+    text-decoration: none;
+}
+
+.title:visited {
+    color: #E0F7FA;
+    text-decoration: none;
+}
+
+#loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+img {
+    max-width: 100%;
+    margin: auto;
+    padding: 0;
+}
+
+table {
+    margin: auto;
+    min-width: 100px;
+    max-width: 500px;
+}
+
+tr {
+    width: 100%;
+}
+
+td {
+    width: 100%;
+}
+
+form {
+    margin-top: 5%;
+}
+
+.left {
+    float: left;
+    text-align: left;
+}
+
+.right {
+    float: right;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+}
+
+
+.point {
+    text-align: center;
+    cursor: pointer;
+    background-color: #E040FB;
+}
+
+.point:hover {
+    background-color: #bf34d8;
+}
+
+.point:active {
+    background-color: #ab30c1;
+}
+
+footer {
+    font-size: 50%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.bigredbutton {
+  background-color: red;
+  color: white;
+  border: none;
+  width: 100%;
+  font-size: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.bigredbutton:hover {
+  background-color: #FF5555;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        left: 23%;
+	font-size: 50%;
+    }
+    
+    h1, h2 {
+        font-size: 90%;
+    }
+    
+    p, td, th {
+        text-align: center;
+    }
+
+    .left {
+	float: left;
+	text-align: left;
+    }
+
+    .right {
+	float: right;
+    }
+
+}
+
+.error {
+    outline: solid 1px red;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FriRide</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="banner.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="api.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <h1><a class="title" href="index.html">FriRide Ride Share</a></h1>
+    <div id="app">
+      <banner></banner>
+    </div>
+
+    <p>Here is the documented REST API for FriRide. If you are interested in obtaining a key then you can purchase one <a href="key.html">here</a>.</p>
+    
+    <div id="api">
+      <div>
+	<h2 id="toggleGET" class="point">GET</h2>
+	<p id="get" class="hidden"></p>
+      </div>
+      <div>
+	<h2 id="togglePOST" class="point">POST</h2>
+	<p id="post" class="hidden"></p>
+      </div>
+      <div>
+	<h2 id="togglePUT" class="point">PUT</h2>
+	<p id="put" class="hidden"></p>
+      </div>
+      <div>
+	<h2 id="toggleDEL" class="point">DELETE</h2>
+	<p id="del" class="hidden"></p>
+      </div>
+    </div>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="vue.min.js"></script>
+    <script src="banner.js"></script>
+    <script src="api.js"></script>
+  </body>
+</html>

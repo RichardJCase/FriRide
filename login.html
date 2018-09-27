@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FriRide</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="login.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="banner.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <h1><a class="title" href="index.html">FriRide Ride Share</a></h1>
+    <div id="app">
+      <banner></banner>
+    </div>
+    <script src="vue.min.js"></script>
+    <script src="banner.js"></script>
+    
+    <form name="login" action="/login" method="POST">
+      <table>
+	<tr>
+	  <td>Username:</td>
+	  <td><input type="text" name="username"></td>
+	</tr>
+	<tr>
+	  <td>Password:</td>
+	  <td>
+	    <input type="password" name="password">
+	  </td>
+	</tr>
+	<tr>
+	  <td><a href="forgotpassword.html" style="font-size: 50%;">Forgot password?</a></td>
+	  <td><input type="submit" value="Submit" class="right"></td>
+	</tr>
+      </table>
+    </form>
+    <a href="newaccount.html" class="right">Sign-up.</a>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+td {
+  max-width: 300px;
+}
+
+input[type="text"] {
+  min-width: 300px;
+  float: right;
+}
+
+input[type="Submit"] {
+  width: 200px;
+}
+
+.right {
+  float: right;
+}
+
+@media only screen and (max-width: 850px) {
+  input[type="text"] {
+    min-width: 250px;
+    margin-right: -20%;
+    float: right;
+  }  
+
+  input[type="Submit"] {
+    margin-right: -20%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  input[type="text"] {
+    min-width: 150px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  input[type="text"] {
+    min-width: 100px;
+  }
+  
+  .right {
+    text-align: right;
+  }
+}

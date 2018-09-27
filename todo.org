@@ -1,0 +1,19 @@
+* TODO deploy
+** DONE page refresh fix
+** DONE https redirect
+** DONE confirm password
+** TODO dedicated server
+*** TODO server
+*** TODO power backup for router and server
+** TODO save login for app (https://stackoverflow.com/questions/12744337/how-to-keep-android-applications-always-be-logged-in-state)
+** TODO youtube tutorial videos
+* TODO polish
+** DONE change clickable divs on hover
+** DONE fade in and out options (change password bug)
+** TODO api descriptions
+** TODO gzip encoding
+** TODO minimize html, js, css, etc
+** TODO vectors instead of linked lists in haskell code
+** TODO design
+*** TODO no absolute px, use em
+*** TODO spinner loaders in app

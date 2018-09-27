@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FriRide</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="home.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="banner.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="loggedin.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <h1><a class="title" href="index.html">FriRide Ride Share</a></h1>
+    <div id="app">
+      <banner></banner>
+    </div>
+    <script src="vue.min.js"></script>
+    <script src="banner.js"></script>
+
+    <p id="status">Please select a ride.</p>
+
+    <p id="ridelabel">Requested Rides</p>
+    <form id="rideform" method="POST" onsubmit="return valid('rideform')">
+      <table id="ride">
+      </table>
+      <div id="riderate">
+	<select name="rating">
+	  <option value="-2">-2</option>
+	  <option value="-1">-1</option>
+	  <option value="0" selected="selected">0</option>
+	  <option value="1">1</option>
+	  <option value="2">2</option>
+	</select>
+	<input id="rateride" class="rate" type="submit" value="Rate" />
+	<input id="cancelride" class="cancel" type="submit" value="Cancel" />
+	<br>
+      </div>
+    </form>
+
+    <p id="drivelabel">Ride Requests</p>
+    <form id="driveform" method="POST" onsubmit="return valid('driveform')">
+      <table id="drive">
+      </table>
+      <div id="driverate">
+	<select name="rating">
+	  <option value="-2">-2</option>
+	  <option value="-1">-1</option>
+	  <option value="0" selected="selected">0</option>
+	  <option value="1">1</option>
+	  <option value="2">2</option>
+	</select>
+	<input id="ratedrive" class="rate" type="submit" value="Rate" />
+	<input id="canceldrive" class="cancel" type="submit" value="Cancel" />
+      </div>
+    </form>
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="home.js"></script>
+    <script src="plink.js"></script>
+    <script src="listcurrent.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FriRide</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="showrides.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="rides.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="banner.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="loggedin.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <h1><a class="title" href="index.html">FriRide Ride Share</a></h1>
+    <div id="app">
+      <banner></banner>
+    </div>
+    <script src="vue.min.js"></script>
+    <script src="banner.js"></script>
+
+    <form method="POST" action="/modride" onsubmit="return confirmChecked()">
+      <center><p id="status">Getting location...</p>
+	<div id="loader"></div>
+      </center>
+      <table id="table">
+	<tr><td class="noborder"><input type="hidden" name="status" value="1" /></td></tr>
+	<tr>
+	  <td class="noborder"></td>
+	  <td class="noborder"></td>
+	  <td class="noborder"></td>
+	  <td class="noborder"></td>
+	  <td class="noborder"><input style="display: none" id="submitbutton" type="Submit" value="Submit" /></td>
+	</tr>
+      </table>
+    </form>
+    <script src="loc.js"></script>
+    <script src="plink.js"></script>
+    <script src="showrides.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+table {
+    max-width: 800px;
+}
+
+@media only screen and (max-width: 450px) {
+  td {
+    font-size: 90%;
+  }
+  
+  input {
+    font-size: 90%;
+    width: 100%;
+  }
+  
+  form, table {
+    position: absolute;
+    left: -30px;
+  }
+}

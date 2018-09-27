@@ -1,0 +1,58 @@
+td {
+    width: 33%;
+    border: 1px solid #FFFFFF;
+    padding: 0px;
+    overflow: hidden;
+    max-width: 500px;
+}
+
+th {
+    border: 1px solid #FFFFFF;
+}
+
+table {
+    margin: auto;
+    min-width: 0;
+    max-width: 1500px;
+    border-collapse: collapse;
+}
+
+.noborder {
+    border: none;
+}
+
+
+@media only screen and (max-width: 350px) {
+    table {
+        position: relative;
+        left: -10%;
+    }
+}
+
+.cancel {
+    background-color: red;
+}
+
+input[type=submit] {
+    width: 20%;
+    height: 100%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    border: solid white 1px;
+    border-radius: 5px;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+}
+
+#driverate, #riderate {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+#status {
+    text-align: center;
+    color: red;
+}
